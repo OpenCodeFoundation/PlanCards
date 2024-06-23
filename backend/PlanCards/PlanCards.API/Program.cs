@@ -19,6 +19,7 @@ app.UseSwagger();
 
 
 app.MapSwagger();
+app.UseSwaggerUI();
 //app.MapGet("/", () => "Welcome to PlanCards!");
 app.MapGet("/rooms", async (PlanCardsContext dbContext) =>
 {
@@ -82,5 +83,5 @@ app.MapDelete("/rooms/{id}", async (PlanCardsContext dbContext, Guid id) =>
     return Results.NoContent();
 });
 
-app.UseSwaggerUI();
+
 app.Run();
