@@ -394,5 +394,5 @@ FodyWeavers.xsd
 *.msm
 *.msp
 
-# JetBrains Rider
-#*.sln.iml
+# sqlite database file
+/backend/PlanCards/PlanCards.API/Db/PlanCards.db
